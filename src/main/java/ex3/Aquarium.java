@@ -1,26 +1,24 @@
 package ex3;
 
-import java.util.List;
+/**
+ * Classe qui conceptualise la zone aquarium d'un zoo
+ * 
+ * @author antoinelabeeuw
+ *
+ */
+public class Aquarium extends ZoneATheme {
 
-public class Aquarium {
+	/**
+	 * Constructeur
+	 * 
+	 */
+	public Aquarium() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 
-	private List<String> types;
-	private List<String> noms;
-	private List<String> comportements;
-	
-	public void addAnimal(String typeAnimal, String nomAnimal, String comportement) {
-		types.add(typeAnimal);
-		noms.add(nomAnimal);
-		comportements.add(comportement);
-	}
-	
-	public void afficherListeAnimaux(){
-		for (String nom: noms){
-			System.out.println(nom);
-		}
-	}
-	
-	public double calculerKgsNourritureParJour(){
-		return noms.size() * 0.2;
+	@Override
+	public double calculerKgsNourritureParJour() {
+		return listeAnimaux.size() * 0.2;
 	}
 }

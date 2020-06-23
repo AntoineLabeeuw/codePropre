@@ -2,7 +2,7 @@ package ex4;
 
 import java.util.Date;
 
-public class Pret {
+public class Pret implements Strategy {
 
 	private Strategy strategy;
 	private double capital;
